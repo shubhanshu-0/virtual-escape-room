@@ -50,12 +50,12 @@ function Game() {
       { top: 570, left: 550, width: 200, height: 60 , type : 2,speed : 'slow', no:'3'},
       { top: 570, left: 815, width: 115, height: 60 , type : 1,speed : 'fast' , no:'4'},
       { top: 512, left: 605, width: 145, height: 40 , type : 2,speed : 'fast',no:'5'},
-      { top: 300, left: 600, width: 50, height: 200 , type : 2,speed : 'fast',no:'6'},
-      { top: 320, left: 650, width: 200, height: 40 , type : 2,speed : 'fast',no:'7'},
+      { top: 280, left: 600, width: 50, height: 220 , type : 2,speed : 'fast',no:'6'},
+      { top: 320, left: 650, width: 200, height: 50 , type : 2,speed : 'slow',no:'7'},
       { top: 530, left: 405, width: 200, height: 40 , type : 1,speed : 'fast',no:'8'},
       { top: 570, left: 405, width: 70, height: 60 , type : 2,speed : 'fast',no:'9'},
       { top: 330, left: 540, width: 60, height: 100 , type : 2,speed : 'fast',no:'10'},
-      { top: 360, left: 480, width: 60, height: 70 , type : 2,speed : 'fast',no:'11'},
+      { top: 310, left: 480, width: 60, height: 120 , type : 2,speed : 'fast',no:'11'},
       { top: 432, left: 650, width: 100, height: 50 , type : 1,speed : 'fast',no:'12'},
       { top: 630, left: 325, width: 300, height: 50 , type : 2,speed : 'fast',no:'13'},
       { top: 440, left: 435, width: 165, height: 60 , type : 2,speed : 'fast',no:'14'},
@@ -64,9 +64,18 @@ function Game() {
       { top: 380, left: 335, width: 100, height: 100 , type : 2,speed : 'fast',no:'17'},
       { top: 310, left: 335, width: 50, height: 70 , type : 2,speed : 'fast',no:'18'},
       { top: 260, left: 335, width: 150, height: 50 , type : 2,speed : 'fast',no:'19'},
-    //   { top: 200, left: 395, width: 50, height: 100 , type : 2,speed : 'fast',no:'20'},
+      { top: 280, left: 945, width: 70, height: 260 , type : 1,speed : 'slow',no:'20'},
+      { top: 210, left: 795, width: 220, height: 70 , type : 1,speed : 'fast',no:'21'},
+      { top: 280, left: 750, width: 100, height: 40 , type : 2,speed : 'slow',no:'22'},
+      { top: 230, left: 650, width: 145, height: 50 , type : 2,speed : 'fast',no:'23'},
+      { top: 200, left: 530, width: 120, height: 80 , type : 2,speed : 'fast',no:'24'},
+      { top: 200, left: 455, width: 75, height: 50 , type : 2,speed : 'fast',no:'25'},
+      { top: 370, left: 770, width: 175, height: 62 , type : 2,speed : 'fast',no:'26'},
     ]
   );
+  //type 1 -- width short (right -  short)
+  // type 2 -- height short (bottom - short)
+  
   const [cursorX, setCursorX] = useState(0);
   const [cursorY, setCursorY] = useState(0);
   const [isGameOver, setIsGameOver] = useState(false);
@@ -89,6 +98,7 @@ function Game() {
         }
 
         const updatedWidths = pathWidths.map((path) => {
+          //modification in path positioning like path.left + 10 ... to adjust in all the systems
           if (
             mouseX >= path.left &&
             mouseX <= path.left + path.width &&
@@ -106,7 +116,6 @@ function Game() {
                 newHeight--;
                 if(path.speed == 'fast')  newHeight-=2;
               }
-
 
               if (newWidth <= 0 || newHeight <= 0) {
                 decreaseScore(10);
@@ -154,21 +163,23 @@ function Game() {
           </div>
         </div>
       )}
-      <div className="game-frame">
+    <div className="game-frame">
       {pathWidths.map((path, index) => (
         <div
           key={index}
-          className="path"
+          className={`path ${path.width > path.height ? 'path-horizontal-bg' : 'path-vertical-bg'}`}
           style={{
             width: path.width + 'px',
             height: path.height + 'px',
-            top: path.top + 'px',
-            left: path.left + 'px',
-          }}></div>
-        // >{path.no}</div>
+            marginTop: path.top + 'px',
+            marginLeft: path.left + 'px',
+          }}
+        >
+          {path.no}
+        </div>
       ))}
-      </div>
-      
+    </div>
+          
       <div className="cursor" style={{ left: cursorX + 'px', top: cursorY + 'px' }}></div>
       <button className="end-point" onClick={chantpaper}></button>
       <Modal open={ischantpapervisible} onClose={chantpaper}>
