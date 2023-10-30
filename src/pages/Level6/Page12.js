@@ -60,13 +60,15 @@ const Page12 = () => {
     }
   };
 
-  const [timeRemaining, setTimeRemaining] = useState(60*15); 
+  const [timeRemaining, setTimeRemaining] = useState(15*60); 
   const [isTimeOver, setIsTimeOver] = useState(false);
 
   useEffect(() => {
     if (timeRemaining <= 0) {
       decreaseScore(500);
-      gameover(navigate);
+      if(isDead){
+        gameover(navigate);
+      }
     } else {
       const timer = setInterval(() => {
         setTimeRemaining(prevTime => prevTime - 1);

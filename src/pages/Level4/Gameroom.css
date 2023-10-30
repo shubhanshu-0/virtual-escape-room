@@ -23,9 +23,7 @@
     height: 70px;
     background-color: rgba(65, 6, 15, 0.75);
     transition: width 1s; 
-  
   }
-
 
   .cursor {
     cursor: url('../../assets/Images/hand.png') , auto;

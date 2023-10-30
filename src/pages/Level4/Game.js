@@ -31,16 +31,14 @@ function Game() {
 
 
   const restart = () => {
+    if(isDead){
+      gameover(navigate);
+    }
     navigate('/Gameroom', {
         state: {
           auth: true
         },
       });
-  };
-
-  const toggleInstructions = () => {
-    decreaseScore(20);
-    setInstructionsVisible(!instructionsVisible);
   };
 
   
@@ -88,7 +86,6 @@ function Game() {
         if ((mouseX < 930 || mouseX > 1080 ||  mouseY < 540 || mouseY > 710) && (mouseX < 395 || mouseX > 460 || mouseY < 180 || mouseY > 260 ) && !isCursorInPath) {
           decreaseScore(10);
           setIsGameOver(true);
-          
         }
 
         const updatedWidths = pathWidths.map((path) => {

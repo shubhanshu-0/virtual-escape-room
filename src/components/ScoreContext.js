@@ -33,7 +33,6 @@ export const ScoreProvider = ({ children }) => {
     localStorage.setItem('score', score - amount); // Save the updated score to local storage
   };
 
-
   const clearScore = () => {
     localStorage.removeItem('score'); 
     setScore(500); 
