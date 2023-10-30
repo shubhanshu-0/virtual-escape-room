@@ -70,7 +70,7 @@ button:hover{
   background: url('https://images.hindustantimes.com/img/2022/10/30/1600x900/haunted-house-g5d638e7bd_1920_1667132286906_1667132303445_1667132303445.jpg');
 } */
 .start{
-  background: url('../../escape-room/src/assets/Images/bgmain1.png');
+  background: url('./assets/Images/bgmain1.png');
 }
 
 .level1{
