@@ -29,6 +29,9 @@ const style = {
 const Page12 = () => {
 
   const { score, decreaseScore , isDead } = useScore();
+  if(isDead){
+    gameover(navigate);
+  }
 
   const [inputValue, setInputValue] = useState("");
 

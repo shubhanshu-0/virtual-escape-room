@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
+import { useScore } from "../../components/ScoreContext";
+import { gameover } from "../Dead/gameover";
 const Page25 = () => {
   const navigate = useNavigate();
+  const { score, decreaseScore , isDead } = useScore();
+  if(isDead){
+    gameover(navigate);
+  }
   const handleClick = () => {
     navigate("/page3", {
       state: {

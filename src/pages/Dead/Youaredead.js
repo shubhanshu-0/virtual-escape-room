@@ -1,9 +1,10 @@
 import React from 'react'
+import './Youaredead.css'
 
 const Youaredead = () => {
   return (
-    <div>
-      DEAD
+    <div className='dead'>
+    
     </div>
   )
 }

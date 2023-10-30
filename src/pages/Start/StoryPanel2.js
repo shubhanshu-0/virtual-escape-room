@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const StoryPanel2 = () => {
   const [text, setText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
-  const panelText = "Drawn by curiosity and a hint of reckless bravery, you decided to enter the mansion, ignoring the tales of curses that had plagued the mansion for centuries. The creaking wooden door opened with an unsettling groan, and you stepped into a world of haunting secrets.";
+  const panelText = "As you ventured deeper into the woods, an eerie silhouette emerged from the mist - the long-forgotten Thornwood Mansion. It loomed, its decaying facade casting an ominous shadow over them.";
 
   useEffect(() => {
     const interval = setInterval(() => {

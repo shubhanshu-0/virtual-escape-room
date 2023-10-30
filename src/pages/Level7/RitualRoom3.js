@@ -10,6 +10,10 @@ import { gameover } from "../Dead/gameover";
 const RitualRoom3 = () => {
   const { score, decreaseScore , isDead } = useScore();
   const navigate = useNavigate();
+  if(isDead){
+    gameover(navigate);
+  }
+
 
       const location = useLocation();
       useEffect(() => {

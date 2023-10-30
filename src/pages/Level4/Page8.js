@@ -6,12 +6,16 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import { useScore } from "../../components/ScoreContext";
-
+import { useScore } from "../../components/ScoreContext";
+import { gameover } from "../Dead/gameover";
 
 export default function Page8() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { score, decreaseScore , isDead } = useScore();
+  if(isDead){
+    gameover(navigate);
+  }
 
 
   useEffect(() => {

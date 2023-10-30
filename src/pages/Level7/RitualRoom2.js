@@ -3,10 +3,16 @@ import { useLocation, useNavigate } from "react-router-dom";
 import './RitualRoom.css'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useScore } from "../../components/ScoreContext";
+import { gameover } from "../Dead/gameover";
 
 const RitualRoom2 = () => {
-
+  const { score, decreaseScore , isDead } = useScore();
   const navigate = useNavigate();
+  if(isDead){
+    gameover(navigate);
+  }
+
     const handleClick = () => {
         navigate("/page15", {
           state: {

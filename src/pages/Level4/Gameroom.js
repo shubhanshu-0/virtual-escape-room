@@ -8,9 +8,13 @@ import { gameover } from "../Dead/gameover";
 
 function Gameroom() {
   const { score, decreaseScore , isDead } = useScore();
-  const [instructionsVisible, setInstructionsVisible] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  if(isDead){
+    gameover(navigate);
+  }
+  const [instructionsVisible, setInstructionsVisible] = useState(false);
+ 
 
   useEffect(()=>{
     if(!location.state || !location.state.auth){

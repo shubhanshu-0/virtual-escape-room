@@ -2,13 +2,21 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useScore } from "../../components/ScoreContext";
+import { gameover } from "../Dead/gameover";
 
 const Page14 = () => {
   const [inputValue, setInputValue] = useState("");
+
+  const { score, decreaseScore , isDead } = useScore();
+  const navigate = useNavigate();
+  if(isDead){
+    gameover(navigate);
+  }
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
-  const navigate = useNavigate();
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (inputValue === "c54r") {
