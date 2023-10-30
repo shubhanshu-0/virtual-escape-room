@@ -9,6 +9,7 @@ import StoryPanel2 from './StoryPanel2';
 import StoryPanel3 from './StoryPanel3'
 import StoryPanel4 from './StoryPanel4';
 import StoryPanel5 from './StoryPanel5'
+import StoryPanel6 from './StoryPanel6';
 
 
 const Page2 = () => {
@@ -23,7 +24,7 @@ const Page2 = () => {
   }, [location.state, navigate]);
 
   const handleNextClick = () => {
-    if (currentPanel < 8) {
+    if (currentPanel < 9) {
       setCurrentPanel(currentPanel + 1);
     } else {
       navigate('/page25', {
@@ -41,8 +42,28 @@ const Page2 = () => {
     return () => clearTimeout(timer);
   }, []);
 
+
+  const getBackgroundClass = () => {
+    switch (currentPanel) {
+      case 4:
+        return 'sp1';
+      case 5:
+        return 'sp2';
+      case 6:
+        return 'sp3';
+      case 7:
+        return 'sp4';
+      case 8:
+        return 'sp5';
+      case 9:
+        return 'sp6';
+      default:
+        return 'default-bg'; 
+    }
+  };
+
   return (
-    <div className={`fade-in-panel2 bg start ${fadeIn ? 'fade-in' : ''}`}>
+    <div className={`fade-in-panel2 bg start ${fadeIn ? 'fade-in' : ''} ${getBackgroundClass()}`}>
       <div className='title' style={{marginBottom:"7rem"}}>VIRTUAL ESCAPE</div>
       <div className='desc' style={{ padding:"2rem 10rem", alignSelf:"flex-start"}}>
       {currentPanel === 1 && <Panel1 />}
@@ -53,6 +74,7 @@ const Page2 = () => {
       {currentPanel === 6 && <StoryPanel3/>}
       {currentPanel === 7 && <StoryPanel4 />}
       {currentPanel === 8 && <StoryPanel5/>}
+      {currentPanel === 9 && <StoryPanel6/>}
       </div>
       <button onClick={handleNextClick}>Next</button>
     </div>

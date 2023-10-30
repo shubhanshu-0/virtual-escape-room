@@ -6,11 +6,16 @@ import Modal from "@mui/material/Modal";
 import { gameover } from "../Dead/gameover";
 
 
+
 function Game() {
   const { score, decreaseScore , isDead } = useScore();
-  const [instructionsVisible, setInstructionsVisible] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  if(isDead){
+    gameover(navigate);
+  }
+  const [instructionsVisible, setInstructionsVisible] = useState(false);
+ 
 
   const [ischantpapervisible, setchantpapervisible] = useState(false);
 
@@ -68,8 +73,8 @@ function Game() {
       { top: 210, left: 795, width: 220, height: 70 , type : 1,speed : 'fast',no:'21'},
       { top: 280, left: 750, width: 100, height: 40 , type : 2,speed : 'slow',no:'22'},
       { top: 230, left: 650, width: 145, height: 50 , type : 2,speed : 'fast',no:'23'},
-      { top: 200, left: 530, width: 120, height: 80 , type : 2,speed : 'fast',no:'24'},
-      { top: 200, left: 455, width: 75, height: 50 , type : 2,speed : 'fast',no:'25'},
+      { top: 215, left: 580, width: 70, height: 65 , type : 2,speed : 'fast',no:'24'},
+      { top: 200, left: 455, width: 125, height: 50 , type : 2,speed : 'fast',no:'25'},
       { top: 370, left: 770, width: 175, height: 62 , type : 2,speed : 'fast',no:'26'},
     ]
   );
@@ -110,10 +115,10 @@ function Game() {
               let newWidth = path.width;
               let newHeight = path.height;
               if (path.type == 1) {
-                newWidth--;
+                newWidth-=2;
                 if(path.speed == 'fast')  newWidth-=2;
               } else if(path.type == 2) {
-                newHeight--;
+                newHeight-=2;
                 if(path.speed == 'fast')  newHeight-=2;
               }
 

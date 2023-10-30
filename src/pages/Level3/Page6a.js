@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { gameover } from "../Dead/gameover";
 
 const Page6a = () => {
   const navigate = useNavigate();

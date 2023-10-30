@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 const StoryPanel3 = () => {
   const [text, setText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
-  const panelText = "As you move forward , you found yourself alone and your friends have disappeared, you start touching objects with a malevolent history, unaware of the dark energy that now clung to their every step. Each item they interacted with carried its own unique curse, revealing fragments of the mansion's gruesome history.";
+    const panelText = "Drawn by curiosity and a hint of reckless bravery, you decided to enter the mansion, ignoring the tales of curses that had plagued the mansion for centuries. The creaking wooden door opened with an unsettling groan, and you stepped into a world of haunting secrets.";
+
   
   useEffect(() => {
     const interval = setInterval(() => {

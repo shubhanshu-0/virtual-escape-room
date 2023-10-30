@@ -22,15 +22,15 @@ export const ScoreProvider = ({ children }) => {
 
   const increaseScore = (amount) => {
     setScore(score + amount);
-    localStorage.setItem('score', score + amount); // Save the updated score to local storage
+    localStorage.setItem('score', score + amount); 
   };
  
   const decreaseScore = (amount) => {
     setScore(score - amount);  
-    if(score - amount <= 0){
+    if(score - amount <= 0 ){
       setIsDead(true);
     }
-    localStorage.setItem('score', score - amount); // Save the updated score to local storage
+    localStorage.setItem('score', score - amount); 
   };
 
   const clearScore = () => {

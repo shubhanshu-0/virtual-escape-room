@@ -6,10 +6,16 @@ import Typography from "@mui/material/Typography";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './styles.css';
+import { useScore } from "../../components/ScoreContext";
+import { gameover } from "../Dead/gameover";
 
 const Page7 = () => {
     const navigate = useNavigate();
     const location = useLocation();
+    const { score, decreaseScore , isDead } = useScore();
+    if(isDead){
+      gameover(navigate);
+    }
 
     useEffect(()=>{
       if(!location.state || !location.state.auth){
