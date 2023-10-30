@@ -76,10 +76,10 @@ function Gameroom() {
                 5. If you think you need rest or you can't follow as they narrow or shortens too quickly, just stop , and the  path will stop shortening and narrowing , but be careful !
               </div>
               <div>
-                7. Do not be too fast or too slow!
+                6. Do not be too fast or too slow!
               </div>
               <div>
-                8. As soon as you collect the chant, enter the next room through the door ! 
+                7. As soon as you collect the chant, enter the next room through the door ! 
               </div>
             </div>
           </div>

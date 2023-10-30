@@ -101,16 +101,16 @@ html, body, #root {
   }
   
 
-  .page7-bg{
-    background-image: url('../../assets/Images/generate\ horror\ 1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    opacity: 0.8;
-  }
+.page7-bg{
+  background-image: url('../../assets/Images/doortogame.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  opacity: 0.8;
+}
 
 .page8-bg{
-  background: url('../../assets/Images/generate\ horror\ 1.png') ;
+  background: url('../../assets/Images/doortogame.png') ;
   background-repeat:no-repeat;
   background-size: cover;
   height: 100vh;
