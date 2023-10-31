@@ -9,7 +9,7 @@ import ghost1 from "../../assets/ghostVid/ghost1.mp4";
 import ghost2 from "../../assets/ghostVid/ghost2.mp4";
 import ghost3 from "../../assets/ghostVid/ghost3.mp4";
 import ghost4 from "../../assets/ghostVid/ghost4.mp4";
-import liftLock from "../../assets/liftLock.png";
+import liftLock from "../../assets/liftLock.webp";
 import { useScore } from "../../components/ScoreContext";
 import { gameover } from "../Dead/gameover";
 

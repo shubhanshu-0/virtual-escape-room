@@ -86,34 +86,34 @@ button:hover{
   background: url(./assets/Images/doortogame.png);
 }
 .level6{
-  background: url(./assets/level6.jpg);
+  background: url(./assets/level6.webp);
 }
 .p1{
-  background: url(./assets/p1.png);
+  background: url(./assets/p1.webp);
 }
 .p2{
-  background: url(./assets/p2.png);
+  background: url(./assets/p2.webp);
 }
 .p3{
-  background: url(./assets/p3.png);
+  background: url(./assets/p3.webp);
 }
 .p4{
-  background: url(./assets/p4.png);
+  background: url(./assets/p4.webp);
 }
 .warning{
-  background: url(./assets/warning.jpg);
+  background: url(./assets/warning.webp);
 }
 .lift{
-  background: url(./assets/liftInside.png);
+  background: url(./assets/liftInside.webp);
 }
 .houseOnFire{
-  background: url(./assets/houseOnFire.png);
+  background: url(./assets/houseOnFire.webp);
 }
 .morning{
-  background: url(./assets/morning.png);
+  background: url(./assets/morning.webp);
 }
 .season2{
-  background: url(./assets/season2.jpg);
+  background: url(./assets/season2.webp);
   animation: flicker3 5s infinite;
 }
 .final{
