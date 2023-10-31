@@ -180,7 +180,7 @@ function Game() {
             marginLeft: path.left + 'px',
           }}
         >
-          // {path.no}
+{/* {path.no} */}
         </div>
       ))}
     </div>
