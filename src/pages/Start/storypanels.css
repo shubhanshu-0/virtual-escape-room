@@ -3,7 +3,7 @@
     backdrop-filter: blur(10px);
 } */
 .sp1{
-    background: url('../../assets/Images/forest.png');
+    background: url('../../assets/Images/forest.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -28,12 +28,12 @@
     background-size: cover;
 }
 .sp6{
-    background: url('../../assets/Images/basemententry.png');
+    background: url('../../assets/Images/basemententry.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .default-bg{
-    background: url('../../assets/Images/bgmain.png');
+    background: url('../../assets/Images/bgmain.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
