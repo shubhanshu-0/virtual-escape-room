@@ -70,7 +70,7 @@ button:hover{
   background: url('https://images.hindustantimes.com/img/2022/10/30/1600x900/haunted-house-g5d638e7bd_1920_1667132286906_1667132303445_1667132303445.jpg');
 } */
 .start{
-  background: url('./assets/Images/bgmain1.png');
+  background: url('./assets/Images/bgmain1.webp');
 }
 
 .level1{
@@ -83,7 +83,7 @@ button:hover{
   background: url(./assets/bgLvl3.webp);
 }
 .level4{
-  background: url(./assets/Images/doortogame.png);
+  background: url(./assets/Images/doortogame.webp);
 }
 .level6{
   background: url(./assets/level6.webp);
