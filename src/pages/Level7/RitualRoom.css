@@ -1,15 +1,15 @@
 .ritual-room-bg1{
-    background: url('../../assets/Images/RitualRoom.jpg');
+    background: url('../../assets/Images/RitualRoom.webp');
     background-size: cover;
     height: 100vh;
 }
 .ritual-room-bg2{
-    background: url('../../assets/Images/RitualRoom2.png');
+    background: url('../../assets/Images/RitualRoom2.webp');
     background-size: cover;
     height: 100vh;
 }
 .ritual-room-bg3{
-    background: url('../../assets/Images/RitualRoom3.png');
+    background: url('../../assets/Images/RitualRoom3.webp');
     background-size: cover;
     height: 100vh;
 }

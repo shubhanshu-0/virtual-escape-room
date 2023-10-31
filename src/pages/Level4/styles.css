@@ -86,7 +86,7 @@ html, body, #root {
   
 
 .page7-bg{
-  background-image: url('../../assets/Images/doortogame.png');
+  background-image: url('../../assets/Images/doortogame.webp');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -94,7 +94,7 @@ html, body, #root {
 }
 
 .page8-bg{
-  background: url('../../assets/Images/doortogame.png') ;
+  background: url('../../assets/Images/doortogame.webp') ;
   background-repeat:no-repeat;
   background-size: cover;
   height: 100vh;
