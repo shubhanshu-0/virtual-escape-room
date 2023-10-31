@@ -3,8 +3,25 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import audio from "../../assets/ghostk.mp3"
+import { useScore } from "../../components/ScoreContext";
+import { gameover } from "../Dead/gameover";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+import burntPaper from "../../assets/burntPaper.webp";
+
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 900,
+  outline: "none",
+};
 
 const Page14k = () => {
+  const { score, decreaseScore , isDead } = useScore();
   const [inputValue, setInputValue] = useState("");
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -32,12 +49,12 @@ const Page14k = () => {
     });
   };
 
-  const location = useLocation();
-  useEffect(() => {
-    if (!location.state || !location.state.auth) {
-      navigate("/");
-    }
-  }, []);
+  // const location = useLocation();
+  // useEffect(() => {
+  //   if (!location.state || !location.state.auth) {
+  //     navigate("/");
+  //   }
+  // }, []);
 
   const [fadeIn, setFadeIn] = useState(false);
   useEffect(() => {
@@ -66,8 +83,38 @@ const Page14k = () => {
     };
   }, [panelText, textIndex]);
 
+  const [openHint, setOpenHint] = React.useState(false);
+
+  const handleOpenHint = () => {
+    decreaseScore(50);
+    if(isDead){
+      gameover(navigate);
+    }
+    setOpenHint(true);
+  };
+
+  const handleCloseHint = () => {
+    setOpenHint(false);
+  };
+
   return (
     <>
+     <button onClick={handleOpenHint} style={{position:"absolute", bottom:"10%", left:"0"}}>Sacrifice My Blood</button>
+    <Modal
+            open={openHint}
+            onClose={handleCloseHint}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <Box sx={style}>
+              <Typography id="modal-modal-description">
+                <img src={burntPaper} width="100%" alt="" />
+                <p className="burntPaperText" style={{top:"30%", fontSize: "3rem", lineHeight:"50px" }}>
+                Focus on the word "Alternatively"
+                </p>
+              </Typography>
+            </Box>
+          </Modal>
       <div className={`fade-in-panel2 bg finalk ${fadeIn ? "fade-in" : ""}`} style={{justifyContent:"start", alignItems:"start"}}>
         {/* <p style={{margin:"0 5rem 3rem 5rem", alignSelf:"flex-start", textShadow:"2px 2px 5px black", fontSize:"1.5rem"}}>{text}</p> */}
         <div>
