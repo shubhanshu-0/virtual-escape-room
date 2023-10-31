@@ -69,7 +69,7 @@ const Page14g = () => {
                         type="text"
                         value={inputValue}
                         onChange={handleInputChange}
-                        placeholder="****"
+                        placeholder="*****"
                         style={{
                           borderRadius: "0",
                           width:"200px",
