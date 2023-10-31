@@ -180,12 +180,12 @@
     top:100px;
   }
   .instructions{
-    text-align: left;
-    width: 80%;
-    font-size: 1rem;
-    margin-top: 150px;
-    margin-left: 150px;
+    text-align: center;
+    width: 70%;
+    font-size:0.5rem;
+    margin: 7rem;
   }
   .instructions div{
     color: rgb(0, 0, 0);
+      font-size:1rem;
   }
