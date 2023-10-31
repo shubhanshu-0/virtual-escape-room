@@ -42,7 +42,7 @@ const End = () => {
           <div className="sub-title" style={{marginTop:"4rem"}}>2024 &nbsp; </div>
         </div>
         {/* <p style={{margin:"0 5rem"}}>You're in an elevator filling with blood, and you have just 15 minutes to escape using four videos and a puzzle. If you can't unlock it in time, you'll suffocate and face a fatal outcome as the blood continues to rise.</p> */}
-        <a href="https://forms.gle/LRaxpf1o9SvcT5bh6" style={{marginTop:"5rem", fontSize:"2rem"}}>GIVE FEEDBACK</a>
+        <a href="https://forms.gle/LRaxpf1o9SvcT5bh6"><button style={{marginTop:"5rem", fontSize:"2rem"}}>GIVE FEEDBACK</button></a>
       </div>
     </>
   );

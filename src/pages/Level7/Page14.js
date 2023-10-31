@@ -71,7 +71,7 @@ const Page14 = () => {
       <div className={`fade-in-panel2 bg final ${fadeIn ? "fade-in" : ""}`}>
         {/* <p style={{margin:"0 5rem 3rem 5rem", alignSelf:"flex-start", textShadow:"2px 2px 5px black", fontSize:"1.5rem"}}>{text}</p> */}
         <form onSubmit={handleSubmit} style={{margin:"0 10rem"}}>
-                    <label style={{color:"white", textShadow:"2px 2px 5px black", fontSize:"2rem"}}>
+                    <label style={{color:"white", textShadow:"2px 2px 5px black", fontSize:"1.5rem"}}>
                     The first part of this ritual is to place the things you have collected on the Seance Table. To place it, simply write the code for the respective object <br /><br />start with the ouija board <br /><br />
                       <input
                         type="text"

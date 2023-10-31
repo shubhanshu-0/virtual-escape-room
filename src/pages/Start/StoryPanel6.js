@@ -23,7 +23,7 @@ const StoryPanel6 = () => {
 
   return (
     <>
-    STORY
+    {/* STORY */}
     <div className={`typewriter-text fade-in ${text ? 'typing' : ''} storytxt`}>{text}</div>
     </>
   );
