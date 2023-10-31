@@ -15,7 +15,7 @@ const Page14k = () => {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue === "why have you chosen us to help you find your resolution?") {
+    if (inputValue === "why have you chosen us to help you find your resolution?" || inputValue ==="why have you chosen us to help you find your resolution") {
       setHintVisible(true);
     } else {
           toast.error("Incorrect Question. Please Try Again", {

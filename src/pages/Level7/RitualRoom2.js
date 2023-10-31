@@ -34,7 +34,7 @@ const RitualRoom2 = () => {
       
       const handleSubmit = (e) => {
         e.preventDefault();
-        if (inputValue == "ignis arde!") {
+        if (inputValue == "ignis arde!" || inputValue == "ignis arde") {
           navigate("/RitualRoom3", {
             state: {
               auth: true,

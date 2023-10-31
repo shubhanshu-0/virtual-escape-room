@@ -16,7 +16,7 @@ const Page14j = () => {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue === "what is the secret that binds this mansion to the spirit world?") {
+    if (inputValue === "what is the secret that binds this mansion to the spirit world?"|| inputValue === "what is the secret that binds this mansion to the spirit world") {
       setHintVisible(true);
     } else {
           toast.error("Incorrect Question. Please Try Again", {

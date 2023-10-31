@@ -8,12 +8,12 @@ import Panel4 from './Panel4';
 const Page118 = () => {
   const navigate = useNavigate();
 
-  const location = useLocation();
-  useEffect(() => {
-    if (!location.state || !location.state.auth) {
-      navigate("/");
-    }
-  }, []);
+  // const location = useLocation();
+  // useEffect(() => {
+  //   if (!location.state || !location.state.auth) {
+  //     navigate("/");
+  //   }
+  // }, []);
 
   const [fadeIn, setFadeIn] = useState(false);
   useEffect(() => {
