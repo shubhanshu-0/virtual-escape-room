@@ -21,7 +21,8 @@ const Panel3 = () => {
   }, [panelText, textIndex]);
 
   return (
-    <>Read the instructions carefully !!!
+    <>
+    {/* Read the instructions carefully !!! */}
     <div className={`typewriter-text fade-in ${text ? 'typing' : ''}`}>{text}</div>
     </>
   );

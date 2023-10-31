@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useScore } from "../../components/ScoreContext";
 import { gameover } from "../Dead/gameover";
+import "./styles.css"
 
 export default function Page8() {
   const navigate = useNavigate();
