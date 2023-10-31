@@ -120,32 +120,32 @@ button:hover{
   background: url(./assets/finalLvl/14.jpg);
 }
 .finala{
-  background: url(./assets/finalLvl/a.png);
+  background: url(./assets/finalLvl/a.png) center;
 }
 .finalb{
-  background: url(./assets/finalLvl/b.png);
+  background: url(./assets/finalLvl/b.png) center;
   
 }
 .finalc{
-  background: url(./assets/finalLvl/c.png);
+  background: url(./assets/finalLvl/c.png) center;
 }
 .finald{
-  background: url(./assets/finalLvl/d.png) ;
+  background: url(./assets/finalLvl/d.png) center ;
 }
 .finale{
-  background: url(./assets/finalLvl/e.png) ;
+  background: url(./assets/finalLvl/e.png) center ;
 }
 .finalf{
   background: url(./assets/finalLvl/f.png);
 }
 .finalg{
-  background: url(./assets/finalLvl/g.png) ;
+  background: url(./assets/finalLvl/g.png) -50px;
 }
 .finalh{
-  background: url(./assets/finalLvl/h.png)  ;
+  background: url(./assets/finalLvl/h.png) center;
 }
 .finali{
-  background: url(./assets/finalLvl/i.png);
+  background: url(./assets/finalLvl/i.png) -120px;
 }
 .finalj{
   background: url(./assets/finalLvl/j.png);
