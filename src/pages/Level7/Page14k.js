@@ -49,12 +49,12 @@ const Page14k = () => {
     });
   };
 
-  // const location = useLocation();
-  // useEffect(() => {
-  //   if (!location.state || !location.state.auth) {
-  //     navigate("/");
-  //   }
-  // }, []);
+  const location = useLocation();
+  useEffect(() => {
+    if (!location.state || !location.state.auth) {
+      navigate("/");
+    }
+  }, []);
 
   const [fadeIn, setFadeIn] = useState(false);
   useEffect(() => {
