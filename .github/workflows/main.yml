@@ -39,4 +39,4 @@ jobs:
       run: sudo scp -o StrictHostKeyChecking=no -i tcp.pem -r build/* root@142.93.212.1:/home/Virtual_Escape_Room/build
 
     - name: LIVE!!!
-      run: echo "Site is Live!🚀🚀🚀"
+      run: echo "Virtual Escape Room is Live!🚀🚀🚀"
