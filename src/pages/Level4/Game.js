@@ -115,11 +115,11 @@ function Game() {
               let newWidth = path.width;
               let newHeight = path.height;
               if (path.type == 1) {
-                newWidth-=2;
-                if(path.speed == 'fast')  newWidth-=2;
+                newWidth-=1.5;
+                if(path.speed == 'fast')  newWidth-=3;
               } else if(path.type == 2) {
-                newHeight-=2;
-                if(path.speed == 'fast')  newHeight-=2;
+                newHeight-=1.5;
+                if(path.speed == 'fast')  newHeight-=3;
               }
 
               if (newWidth <= 0 || newHeight <= 0) {
