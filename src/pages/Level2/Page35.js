@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import map2 from "../../assets/map2.webp"
+import { gameover } from "../Dead/gameover";
+import { useScore } from "../../components/ScoreContext";
 
 const Page35 = () => {
+  const { score, decreaseScore , isDead } = useScore();
   const navigate = useNavigate();
+  
+  if(isDead){
+    gameover(navigate);
+  }
   const handleClick = () => {
     navigate("/page4a", {
       state: {

@@ -12,12 +12,12 @@ const Youaredead = () => {
     });
   };
 
-  const location = useLocation();
-  useEffect(() => {
-    if (!location.state || !location.state.auth) {
-      navigate("/");
-    }
-  }, []);
+  // const location = useLocation();
+  // useEffect(() => {
+  //   if (!location.state || !location.state.auth) {
+  //     navigate("/");
+  //   }
+  // }, []);
   return (
     <div className='dead'>
     <button onClick={handleClick}>Next</button>

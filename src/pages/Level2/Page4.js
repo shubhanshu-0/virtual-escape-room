@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { gameover } from "../Dead/gameover";
+import { useScore } from "../../components/ScoreContext";
 
 const Page4 = () => {
+  const { score, decreaseScore , isDead } = useScore();
   const navigate = useNavigate();
+  const location = useLocation();
+  
+  if(isDead){
+    gameover(navigate);
+  }
   const handleClick = () => {
     navigate("/page35", {
       state: {
@@ -11,7 +19,6 @@ const Page4 = () => {
     });
   };
 
-  const location = useLocation();
   useEffect(() => {
     if (!location.state || !location.state.auth) {
       navigate("/");
