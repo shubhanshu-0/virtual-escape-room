@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const StoryPanel4 = () => {
   const [text, setText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
-  const panelText = "As you move forward , you notice your friends have disappeared and you are alone and lost in  abig mansion, you start touching objects with a malevolent history, unaware of the dark energy that now clung to their every step. Each item they interacted with carried its own unique curse, revealing fragments of the mansion's gruesome history.";
+  const panelText = "As time went on, the mansion started to transform. Its rooms seemed to move and twist, almost like they were being controlled by vengeful ghosts. You could hear faint, eerie voices in the corridors, and creepy figures would suddenly appear. Now, you're stuck and unable to escape, trapped in a very spooky and strange series of ghostly events.";
     
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,7 +22,7 @@ const StoryPanel4 = () => {
 
   return (
     <>
-    STORY
+    {/* STORY */}
     <div className={`typewriter-text fade-in ${text ? 'typing' : ''} storytxt`}>{text}</div>
     </>
  );

@@ -15,7 +15,7 @@ const Page14l = () => {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue === "who are you, and what is your connection to this place?") {
+    if (inputValue === "who are you, and what is your connection to this place?"|| inputValue ==="who are you and what is your connection to this place?" || inputValue ==="who are you, and what is your connection to this place" || inputValue ==="who are you and what is your connection to this place" ) {
       setHintVisible(true);
     } else {
           toast.error("Incorrect Question. Please Try Again", {

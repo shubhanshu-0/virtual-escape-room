@@ -65,7 +65,7 @@ const Page2 = () => {
   return (
     <div className={`fade-in-panel2 bg start ${fadeIn ? 'fade-in' : ''} ${getBackgroundClass()}`}>
       <div className='title' style={{marginBottom:"7rem"}}>VIRTUAL ESCAPE</div>
-      <div className='desc' style={{ padding:"2rem 10rem", alignSelf:"flex-start"}}>
+      <div className='desc' style={{ padding:"0rem 10rem 2rem 10rem", alignSelf:"flex-start"}}>
       {currentPanel === 1 && <Panel1 />}
       {currentPanel === 2 && <Panel2 />}
       {currentPanel === 3 && <Panel3 />}

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Panel3 = () => {
   const [text, setText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
-  const panelText = "You're all set, so get ready for a chilling journey into the sinister mansion."; // Customize the text as needed
+  const panelText = "You're all set, so get ready for a chilling journey into the cursed mansion."; // Customize the text as needed
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,7 +21,8 @@ const Panel3 = () => {
   }, [panelText, textIndex]);
 
   return (
-    <>Read the instructions carefully !!!
+    <>
+    {/* Read the instructions carefully !!! */}
     <div className={`typewriter-text fade-in ${text ? 'typing' : ''}`}>{text}</div>
     </>
   );

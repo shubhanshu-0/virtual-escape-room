@@ -64,6 +64,7 @@ function Gameroom() {
               </div>
               <br />
               <div>-- For User? --</div>
+              <div style={{fontSize:"1.3rem", color:"#880808"}}>IMP : Make Sure Your Browser Zoom is Set to 100%. To adjust it, press (ctrl and +) or (ctrl + -). Ensure that you are Playing on Full Screen Only.</div>
               <div>
                 1. Your Cursor Represents Your Hand!
               </div>

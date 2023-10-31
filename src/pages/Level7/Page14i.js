@@ -15,7 +15,7 @@ const Page14i = () => {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue === "what is the consequence of failing to escape this mansion?") {
+    if (inputValue === "what is the consequence of failing to escape this mansion?" || inputValue === "what is the consequence of failing to escape this mansion") {
       setHintVisible(true);
     } else {
           toast.error("Incorrect Question. Please Try Again", {
