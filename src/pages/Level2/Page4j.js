@@ -46,7 +46,7 @@ const Page4j = () => {
 
   const [text, setText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
-  const panelText = "Well done! You've made it this far. Now, you'll encounter three gates: one leads to the next level, while the other two will send you back to the entry point. X is concealed behind the first door, Y behind the second, and Z behind the third. Your destiny lies in your hands."
+  const panelText = "Well done! You've made it this far. Now, you'll encounter three gates: one leads to the next level, while the other two will send you back to the entry point. Knob of The First Gate is poisoned, second gate is electrified and third gate is heated excessively"
 
   useEffect(() => {
     const interval = setInterval(() => {
