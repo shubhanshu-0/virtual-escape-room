@@ -29,14 +29,14 @@ const style = {
 const Page12 = () => {
 
   const { score, decreaseScore , isDead } = useScore();
+  const navigate = useNavigate();
+  const location = useLocation();
+  
   if(isDead){
     gameover(navigate);
   }
 
   const [inputValue, setInputValue] = useState("");
-
-  const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
     if (!location.state || !location.state.auth) {

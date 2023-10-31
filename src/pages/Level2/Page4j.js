@@ -8,8 +8,12 @@ import { gameover } from "../Dead/gameover";
 
 const Page4j = () => {
   const { score, decreaseScore , isDead } = useScore();
-    const navigate = useNavigate();
-    const location = useLocation();
+  const navigate = useNavigate();
+  const location = useLocation();
+  
+  if(isDead){
+    gameover(navigate);
+  }
     useEffect(()=>{
       if(!location.state || !location.state.auth){
         navigate('/');
