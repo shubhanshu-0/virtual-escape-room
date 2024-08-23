@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import intro_music from "../assets/introaudio.mp3";
+import sound_effect from "../assets/introaudio.mp3";
 
 const IntroAudio = () => {
   const [notPlaying, setnotPlaying] = useState(true);
   const audioRef = React.createRef();
-  const toggle = () => {
+  const toggleAudio = () => {
     if (notPlaying) {
       audioRef.current.play();
     } else {
@@ -13,15 +13,12 @@ const IntroAudio = () => {
     setnotPlaying(!notPlaying);
   };
   return (
-    <div class="codeutsava__introAudio-justbg">
-      <audio ref={audioRef} id="codeutsava__introAudio-intro-audio" loop>
-        <source src={intro_music} />
+    <div>
+      <audio ref={audioRef} loop>
+        <source src={sound_effect} />
       </audio>
-      <div className="codeutsava__introAudio-intro-audio-div">
-        <button
-          className="codeutsava__introAudio-intro-audio-btn1"
-          onClick={toggle}
-        >
+      <div>
+        <button onClick={toggleAudio}>
           {!notPlaying ? (
             <p>stop ■</p>
           ) : (

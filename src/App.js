@@ -74,60 +74,60 @@ function App() {
         <div style={{position:"absolute", top:"20px", right:"5px", width:"10%", zIndex:"90"}} className="score-display">health: {score}</div>
         <ToastContainer/>
         <Routes>
-          <Route path="/virtual_escape_room/" element={<Page1 />} />
-          <Route path="/virtual_escape_room/page2" element={<Page2 />} />
-          <Route path="/virtual_escape_room/page25" element={<Page25 />} />
-          <Route path="/virtual_escape_room/page3" element={<Page3 />} />
-          <Route path="/virtual_escape_room/page3a" element={<Page3a />} />
-          <Route path="/virtual_escape_room/page3b" element={<Page3b />} />
-          <Route path="/virtual_escape_room/page35" element={<Page35 />} />
-          <Route path="/virtual_escape_room/page4" element={<Page4 />} /> 
-          <Route path="/virtual_escape_room/page4a" element={<Page4a />} />
-          <Route path="/virtual_escape_room/page4b" element={<Page4b />} />
-          <Route path="/virtual_escape_room/page4c" element={<Page4c />} />
-          <Route path="/virtual_escape_room/page4d" element={<Page4d />} />
-          <Route path="/virtual_escape_room/page4e" element={<Page4e />} />
-          <Route path="/virtual_escape_room/page4f" element={<Page4f />} />
-          <Route path="/virtual_escape_room/page4g" element={<Page4g />} />
-          <Route path="/virtual_escape_room/page4h" element={<Page4h />} />
-          <Route path="/virtual_escape_room/page4i" element={<Page4i />} />
-          <Route path="/virtual_escape_room/page4j" element={<Page4j />} />
-          <Route path="/virtual_escape_room/page5" element={<Page5 />} />
-          <Route path="/virtual_escape_room/page6" element={<Page6 />} />
-          <Route path="/virtual_escape_room/page6a" element={<Page6a />} />
-          <Route path="/virtual_escape_room/page6b" element={<Page6b />} />
-          <Route path="/virtual_escape_room/page7" element={<Page7 />} />
-          <Route path="/virtual_escape_room/page8" element={<Page8 />} />
-          <Route path="/virtual_escape_room/gameroom" element={<Gameroom />} />
-          <Route path="/virtual_escape_room/game" element={<Game/>} />
-          <Route path="/virtual_escape_room/page11" element={<Page11 />} />
-          <Route path="/virtual_escape_room/page115" element={<Page115 />} />
-          <Route path="/virtual_escape_room/page116" element={<Page116 />} />
-          <Route path="/virtual_escape_room/page117" element={<Page117 />} />
-          <Route path="/virtual_escape_room/page118" element={<Page118 />} />
-          <Route path="/virtual_escape_room/end" element={<End/>} />
-          <Route path="/virtual_escape_room/page12" element={<Page12 />} />
-          <Route path="/virtual_escape_room/page13" element={<Page13 />} />
-          <Route path="/virtual_escape_room/RitualRoom1" element={<RitualRoom1 />} />
-          <Route path="/virtual_escape_room/RitualRoom2" element={<RitualRoom2 />} />
-          <Route path="/virtual_escape_room/RitualRoom3" element={<RitualRoom3 />} />
-          <Route path="/virtual_escape_room/page14" element={<Page14 />} />
-          <Route path="/virtual_escape_room/page14a" element={<Page14a />} />
-          <Route path="/virtual_escape_room/page14b" element={<Page14b />} />
-          <Route path="/virtual_escape_room/page14c" element={<Page14c />} />
-          <Route path="/virtual_escape_room/page14d" element={<Page14d />} />
-          <Route path="/virtual_escape_room/page14e" element={<Page14e />} />
-          <Route path="/virtual_escape_room/page14f" element={<Page14f />} />
-          <Route path="/virtual_escape_room/page14g" element={<Page14g />} />
-          <Route path="/virtual_escape_room/page14h" element={<Page14h />} />
-          <Route path="/virtual_escape_room/page14i" element={<Page14i />} />
-          <Route path="/virtual_escape_room/page14j" element={<Page14j />} />
-          <Route path="/virtual_escape_room/page14k" element={<Page14k />} />
-          <Route path="/virtual_escape_room/page14l" element={<Page14l />} />
-          <Route path="/virtual_escape_room/thankyou" element={<Thankyou />} />
-          <Route path="/virtual_escape_room/page15" element={<Page15 />} />
-          <Route path="/virtual_escape_room/page125" element={<Page125 />} />
-          <Route path="/virtual_escape_room/youaredead" element={<Youaredead />} />
+          <Route path="/" element={<Page1 />} />
+          <Route path="/page2" element={<Page2 />} />
+          <Route path="/page25" element={<Page25 />} />
+          <Route path="/page3" element={<Page3 />} />
+          <Route path="/page3a" element={<Page3a />} />
+          <Route path="/page3b" element={<Page3b />} />
+          <Route path="/page35" element={<Page35 />} />
+          <Route path="/page4" element={<Page4 />} /> 
+          <Route path="/page4a" element={<Page4a />} />
+          <Route path="/page4b" element={<Page4b />} />
+          <Route path="/page4c" element={<Page4c />} />
+          <Route path="/page4d" element={<Page4d />} />
+          <Route path="/page4e" element={<Page4e />} />
+          <Route path="/page4f" element={<Page4f />} />
+          <Route path="/page4g" element={<Page4g />} />
+          <Route path="/page4h" element={<Page4h />} />
+          <Route path="/page4i" element={<Page4i />} />
+          <Route path="/page4j" element={<Page4j />} />
+          <Route path="/page5" element={<Page5 />} />
+          <Route path="/page6" element={<Page6 />} />
+          <Route path="/page6a" element={<Page6a />} />
+          <Route path="/page6b" element={<Page6b />} />
+          <Route path="/page7" element={<Page7 />} />
+          <Route path="/page8" element={<Page8 />} />
+          <Route path="/gameroom" element={<Gameroom />} />
+          <Route path="/game" element={<Game/>} />
+          <Route path="/page11" element={<Page11 />} />
+          <Route path="/page115" element={<Page115 />} />
+          <Route path="/page116" element={<Page116 />} />
+          <Route path="/page117" element={<Page117 />} />
+          <Route path="/page118" element={<Page118 />} />
+          <Route path="/end" element={<End/>} />
+          <Route path="/page12" element={<Page12 />} />
+          <Route path="/page13" element={<Page13 />} />
+          <Route path="/RitualRoom1" element={<RitualRoom1 />} />
+          <Route path="/RitualRoom2" element={<RitualRoom2 />} />
+          <Route path="/RitualRoom3" element={<RitualRoom3 />} />
+          <Route path="/page14" element={<Page14 />} />
+          <Route path="/page14a" element={<Page14a />} />
+          <Route path="/page14b" element={<Page14b />} />
+          <Route path="/page14c" element={<Page14c />} />
+          <Route path="/page14d" element={<Page14d />} />
+          <Route path="/page14e" element={<Page14e />} />
+          <Route path="/page14f" element={<Page14f />} />
+          <Route path="/page14g" element={<Page14g />} />
+          <Route path="/page14h" element={<Page14h />} />
+          <Route path="/page14i" element={<Page14i />} />
+          <Route path="/page14j" element={<Page14j />} />
+          <Route path="/page14k" element={<Page14k />} />
+          <Route path="/page14l" element={<Page14l />} />
+          <Route path="/thankyou" element={<Thankyou />} />
+          <Route path="/page15" element={<Page15 />} />
+          <Route path="/page125" element={<Page125 />} />
+          <Route path="/youaredead" element={<Youaredead />} />
         </Routes>
       </div>
     </Router>

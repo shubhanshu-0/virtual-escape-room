@@ -4,7 +4,6 @@ const Panel3 = () => {
   const [text, setText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
   const panelText = "You're all set, so get ready for a chilling journey into the cursed mansion."; // Customize the text as needed
-
   useEffect(() => {
     const interval = setInterval(() => {
       if (textIndex < panelText.length) {
@@ -13,8 +12,7 @@ const Panel3 = () => {
       } else {
         clearInterval(interval);
       }
-    }, 20); // Adjust the typing speed as needed (e.g., 50 milliseconds)
-
+    }, 20);
     return () => {
       clearInterval(interval);
     };
