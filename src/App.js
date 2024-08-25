@@ -74,7 +74,7 @@ function App() {
         <div style={{position:"absolute", top:"20px", right:"5px", width:"10%", zIndex:"90"}} className="score-display">health: {score}</div>
         <ToastContainer/>
         <Routes>
-          <Route path="/virtual_escape_room/" element={<Page1 />} />
+        <Route path="/virtual_escape_room/" element={<Page1 />} />
           <Route path="/virtual_escape_room/page2" element={<Page2 />} />
           <Route path="/virtual_escape_room/page25" element={<Page25 />} />
           <Route path="/virtual_escape_room/page3" element={<Page3 />} />
